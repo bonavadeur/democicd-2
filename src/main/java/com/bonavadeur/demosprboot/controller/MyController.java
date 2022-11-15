@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyController {
     @RequestMapping(value={"/hello", "hello-world"}, method= RequestMethod.GET)
     public ResponseEntity<?> hello() {
-        User user = new User(1, "master");
+        User user = new User(2, "two");
         return ResponseEntity.status(HttpStatus.OK).body(user);
     }
 }
